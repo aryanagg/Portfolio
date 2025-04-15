@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Projects</title>
+</head>
+<body>
+
+    <header>
+        <a class ="skip" href = "#main">Skip to Main Content</a>
+              <nav>
+                  <ul>
+                      <li><a href = "index.html">Home</a></li>
+                      <li><a href = "education.html">Education History</a></li>
+                      <li><a href = "experience.html">Work Experience</a></li>
+                      <li class = current><a href = "projects.html">Projects</a></li>
+                  </ul>
+              </nav>
+              <h1>Projects</h1>
+    </header>
+
+
+    <main id="main">
+
+    <button type="button" class="collapsible">Completed Projects</button>
+    <div>
+        <section class = "entry">
+            <h2 class="project-name">Tic-Tac-Toe and Connect 4 AI</h2>
+            <p class="description">Created an algorithm to play the board games Connect 4 and Tic-Tac-Toe in an optimal manner. This was done using the minimax
+               search alongside alpha-beta pruning to reduce the search space based on known information.</p>
+            <div class="tags">
+                <span class="tag">Artificial Intelligence</span>
+                <span class="tag">Python</span>
+                <span class="tag">PyGame</span>
+                <span class="tag">Completed</span>
+            </div>
+        </section>
+
+        <section class = "entry">
+            <h2 class="project-name">Panoramic Image Stitcher</h2>
+            <p class="description">Created a program that takes in images shot from the same location and matches keypoints
+                 in the images to stitch them together to make one larger panoramic picture</p>
+            <div class="tags">
+                <span class="tag">Computer Vision</span>
+                <span class="tag">Python</span>
+                <span class="tag">Completed</span>
+            </div>
+        </section>
+
+        <section class = "entry">
+            <h2 class="project-name">Euchre</h2>
+            <p class="description">Made the popular card game with the option to play against the computer.</p>
+            <div class="tags">
+                <span class="tag">Data Structures and Algorithms</span>
+                <span class="tag">C++</span>
+                <span class="tag">Inheritance</span>
+                <span class="tag">Polymorphism</span>
+                <span class="tag">Completed</span>
+            </div>
+        </section>
+
+        <section class = "entry">
+            <h2 class="project-name">Bank Website</h2>
+            <p class="description">Developed a bank website with security in mind. Prevented multiple log-ins, created a registration process, 
+                checked to make sure balances were valid, gave benefits to bank members, and institued a way to track whether or not a transaction accures fees.</p>
+            <div class="tags">
+                <span class="tag">Data Structures and Algorithms</span>
+                <span class="tag">C++</span>
+                <span class="tag">Completed</span>
+            </div>
+        </section>
+        </div>
+
+        <button type="button" class="collapsible">Unfinished Projects</button>
+        <div>
+            <section class = "entry">
+                <h2 class="project-name">Blackjack</h2>
+                <p class="description">Created a blackjack game using python.</p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">In progress</span>
+                </div>
+            </section>
+        </div>
+
+
+    </main>
+    <footer>
+        <ul>
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "education.html">Education History</a></li>
+            <li><a href = "experience.html">Work Experience</a></li>
+            <li><a href = "projects.html">Projects</a></li>
+        </ul>
+        <p>Copyrights ©&nbsp;<span id="year"></span>&nbsp;Aryan Aggarwal. All Rights Reserved.</p>
+    </footer>
+     <script src="js/script.js"></script>
+</body>
+</html>
