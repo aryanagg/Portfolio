@@ -8,12 +8,16 @@ var i;
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
-    var content = this.nextElementSibling;
+    let content = this.nextElementSibling;
+    let arrow = this.querySelector(".arrow");
+    
     content.style.display === "block"
     if (content.style.display === "block") {
       content.style.display = "none";
+      arrow.innerHTML = '&rarr;';
     } else {
       content.style.display = "block";
+      arrow.innerHTML = '&darr;';
     }
   });
 }
@@ -28,6 +32,9 @@ window.onload = function () {
 
 window.addEventListener("load", function () {
   const nameElement = document.getElementById("name");
+  if(!nameElement){
+    return
+  }
   const text = "Aryan Aggarwal";
   let index = 0;
 

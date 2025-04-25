@@ -1,16 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 *{
-    font-family: Atkinson Hyperlegible;
+    font-family: "Roboto";
 }
 
-*{
-}
 
 .skip{
     position: absolute;
     top: -50px;
     background: white;
-    color:#00274C;
+    color:#023e8a;
 }
 
 .skip:focus{
@@ -25,31 +23,42 @@ nav ul{
     justify-content: center;
     margin-top: 1rem;
     font-size: 120%;
+    margin: 1%;
+}
+
+nav li{
+    padding: 1%;
+}
+
+nav a{
+    border: 2px #023e8a solid;
+    border-radius: 5px;
+    text-decoration: none;
 }
   
-  nav a:hover {
-    background-color: #555;
-    border-radius: 5px;
-  }
+nav a:hover {
+    background-color: #eee;
+}
+
+a:visited{
+    color: #000814;
+}
   
-  /* Highlight current page */
-  .current a {
-    background-color: #007bff;
+.current a {
+    background-color: #023e8a;
     border-radius: 5px;
     color: white;
-  }
+}
   
-  /* Heading */
-  h1 {
+h1 {
     text-align: center;
     margin-top: 1rem;
     font-size: 2rem;
-  }
+}
 
-/* Style the button that is used to open and close the collapsible content */
 .collapsible {
     background-color: #eee;
-    color: #444;
+    color: #000814;
     cursor: pointer;
     padding: 18px;
     width: 70%;
@@ -61,150 +70,184 @@ nav ul{
     margin-right: 15%;
     margin-bottom: 1rem;
     margin-top: 1rem;
-  }
+}
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .collapsible:hover {
-    background-color: #ccc;
-  }
+.active, .collapsible:hover {
+    background-color: #acacac;
+}
 
-  .all-items{
+.all-items{
     display: block;
-  }
+}
   
-  /* Style the collapsible content. Note: hidden by default */
-  .content {
+.content {
     padding: 0 18px;
     display: none;
-    background-color: #f1f1f1;
-  }
-
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f2f4f7;
-    padding: 2rem;
-    color: #333;
-  }
+    background-color: #eee;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 16px;
+    font-size: larger;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    line-height: 120%;
+}
   
-  /* Page title */
-  h1{
+h1{
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2.5rem;
-    color: #222;
-  }
-  
-  /* Titles and text */
-  .project-name, .company {
+    color: #000814;
+}
+
+.project-name, .company {
     font-size: 1.6rem;
-    color: #0077cc;
+    color: #023e8a;
     margin-bottom: 0.75rem;
-  }
+}
   
-  .description {
+.description {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 1rem;
-  }
+}
   
-  /* Tags */
-  .tags {
+.tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-  }
+}
   
-  .tag {
+.tag {
     background-color: #e0f0ff;
-    color: #0077cc;
+    color: #023e8a;
     padding: 0.35rem 0.75rem;
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 500;
-  }
+}
 
-  .entry {
-    background-color: #fff;
+.entry {
+    background-color: #eee;
     padding: 1.5rem 2rem;
     border-radius: 16px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     margin-bottom: 1.5rem;
     margin-left: 15%;
     margin-right: 15%;
-  }
+    
+}
   
-  .job-header {
+.job-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 0.75rem;
-  }
+}
 
-  .role {
+.role {
     font-size: 1rem;
-    color: #444;
+    color: #000814;
     font-weight: normal;
     margin: 0;
-  }
+}
   
-  .year {
+.year {
     font-size: 1rem;
-    color: #555;
+    color: #000814;
     font-weight: 500;
-  }
+}
   
-  /* Description */
-  .job-description {
+.job-description {
     font-size: 1rem;
     line-height: 1.6;
-    color: #444;
-  }
+    color: #000814;
+}
 
-  footer{
+footer{
     margin-top: 2rem;
-  }
+}
 
-  footer p {
+footer p {
     margin-bottom: 1rem;
     font-size: 0.95rem;
     display: flex;
     justify-content: center;
     padding-top: 1%;
-  }
+}
   
-  footer ul {
+footer ul {
     list-style: none;
     padding: 0;
     display: flex;
     gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
-  }
+}
 
-  .bio>p{
+.bio>p{
     text-align: center;
     margin-left: 15%;
     margin-right: 15%;
-  }
+}
 
-  .links {
+.links {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
     margin-top: 1.5rem;
-  }
+}
   
-  .icon {
+.icon {
     width: 40px;
     height: 40px;
     transition: transform 0.2s ease;
-  }
+}
   
-  .icon:hover {
+.icon:hover {
     transform: scale(1.1);
-  }
+}
 
-  .content{
+.content{
     text-align: center;
-  }
+}
+.three-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+  
+.column {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 2px #000814;
+}
+  
+.column h2 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+  
+.column ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+  
+
+img{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+.arrow {
+    position: absolute;
+    right: 20%;
+}
